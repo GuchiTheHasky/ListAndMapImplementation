@@ -4,11 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59011e15-7328-4f46-bea4-0c80215a3973" name="Changes" comment="" />
+    <list default="true" id="59011e15-7328-4f46-bea4-0c80215a3973" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/HashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/MapList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/MapList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/ArrayListTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -26,9 +48,102 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/Colections"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.ArrayListTest.lastIndexOf">
+    <configuration name="ArrayListTest.containsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Colections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guchithehasky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guchithehasky" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.ArrayListTest" />
+      <option name="METHOD_NAME" value="containsFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListTest.containsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Colections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guchithehasky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guchithehasky" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.ArrayListTest" />
+      <option name="METHOD_NAME" value="containsTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListTest.indexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Colections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guchithehasky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guchithehasky" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.ArrayListTest" />
+      <option name="METHOD_NAME" value="indexOf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListTest.isEmptyFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Colections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guchithehasky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guchithehasky" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.ArrayListTest" />
+      <option name="METHOD_NAME" value="isEmptyFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListTest.lastIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Colections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guchithehasky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guchithehasky" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.ArrayListTest" />
+      <option name="METHOD_NAME" value="lastIndexOf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ArrayListTest.lastIndexOf" />
+        <item itemvalue="JUnit.ArrayListTest.indexOf" />
+        <item itemvalue="JUnit.ArrayListTest.containsFalse" />
+        <item itemvalue="JUnit.ArrayListTest.containsTrue" />
+        <item itemvalue="JUnit.ArrayListTest.isEmptyFalse" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
