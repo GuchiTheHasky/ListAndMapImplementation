@@ -25,7 +25,6 @@ public class ArrayList<T> implements List<T> {
             System.arraycopy(array, 0, tempArray, 0, size);
             array = tempArray;
         }
-
     }
 
     @Override
