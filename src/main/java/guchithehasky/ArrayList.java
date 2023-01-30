@@ -83,12 +83,7 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public boolean contains(Object obj) {
-        for (int i = 0; i < size; i++) {
-            if (array[i].equals(obj)) {
-                return true;
-            }
-        }
-        return false;
+        return indexOf(obj) != -1;
     }
 
     @Override

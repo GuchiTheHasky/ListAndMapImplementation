@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59011e15-7328-4f46-bea4-0c80215a3973" name="Changes" comment="Add comment">
-      <change afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/LinkList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/LinkedList.java" afterDir="false" />
+    <list default="true" id="59011e15-7328-4f46-bea4-0c80215a3973" name="Changes" comment="Add LinkedList class &amp;&amp; LinkList Interface">
+      <change afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/LinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/App.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/HashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/LinkList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/ArrayListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,27 +52,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/JUnit_NextTry"
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/Dima_Tasks"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ArrayListTest.lastIndexOf">
-    <configuration name="ArrayListTest.containsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ArrayListTest">
+    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList" />
       <module name="Colections" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guchithehasky.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="guchithehasky" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.ArrayListTest" />
-      <option name="METHOD_NAME" value="containsFalse" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListTest.containsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListLincked" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.ListLincked" />
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -76,15 +72,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="guchithehasky" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.ArrayListTest" />
-      <option name="METHOD_NAME" value="containsTrue" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListTest.indexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="guchithehasky.LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.LinkedList" />
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -92,15 +85,11 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="guchithehasky" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.ArrayListTest" />
-      <option name="METHOD_NAME" value="indexOf" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListTest.isEmptyFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -110,13 +99,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky" />
       <option name="MAIN_CLASS_NAME" value="guchithehasky.ArrayListTest" />
-      <option name="METHOD_NAME" value="isEmptyFalse" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListTest.lastIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +114,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky" />
       <option name="MAIN_CLASS_NAME" value="guchithehasky.ArrayListTest" />
-      <option name="METHOD_NAME" value="lastIndexOf" />
+      <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArrayListTest.lastIndexOf" />
-        <item itemvalue="JUnit.ArrayListTest.indexOf" />
-        <item itemvalue="JUnit.ArrayListTest.containsFalse" />
-        <item itemvalue="JUnit.ArrayListTest.containsTrue" />
-        <item itemvalue="JUnit.ArrayListTest.isEmptyFalse" />
+        <item itemvalue="JUnit.ArrayListTest" />
+        <item itemvalue="JUnit.ArrayListTest.add" />
+        <item itemvalue="Application.guchithehasky.LinkedList" />
+        <item itemvalue="Application.LinkedList" />
+        <item itemvalue="Application.ListLincked" />
       </list>
     </recent_temporary>
   </component>
@@ -165,12 +153,20 @@
       <option name="project" value="LOCAL" />
       <updated>1674914225519</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add LinkedList class &amp;&amp; LinkList Interface">
+      <created>1674983264670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674983264670</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add" />
     <MESSAGE value="Add comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comment" />
+    <MESSAGE value="Add LinkedList class &amp;&amp; LinkList Interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add LinkedList class &amp;&amp; LinkList Interface" />
   </component>
 </project>
