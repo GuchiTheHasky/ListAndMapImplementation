@@ -11,19 +11,14 @@ public class LinkedList <T> implements List<T>{
 
     @Override
     public void add(T element) {
-        Node<T> node = new Node<>(element);
-        if (first == null){
-            first = last = node;
-        }
-        else {
-            this.last.next = node;
-        }
-        size++;
+        add(element, size);
     }
 
     @Override
     public void add(T element, int index) {
-        Objects.checkIndex(index, size);
+        if (index < 0 && index > size - 1){
+            throw new IndexOutOfBoundsException("Index out of bound.");
+        }
         Node<T> node = new Node<>(element);
         if (first == null){
             first = last = node;
@@ -32,7 +27,7 @@ public class LinkedList <T> implements List<T>{
             node.next = first;
             first = node;
         }
-        else if (index == size - 1){ // size
+        else if (index == size - 1){
             last.next = node;
             last = node;
         }
@@ -56,7 +51,7 @@ public class LinkedList <T> implements List<T>{
             }
         }else {
             Node<T> previous = getNodeByIndex(index - 1);
-            removedElement = previous.element;
+            removedElement = previous.next.element;
             previous.next = previous.next.next;
             if (index == size - 1){
                 last = previous;
@@ -73,11 +68,10 @@ public class LinkedList <T> implements List<T>{
     }
 
     @Override
-    @SuppressWarnings("unchecked")
     public void set(T element, int index) {
         Objects.checkIndex(index, size);
         Node<T> node = getNodeByIndex(index);
-        node.element = (T) node;
+        node.element = element;
     }
 
     @Override
@@ -105,20 +99,22 @@ public class LinkedList <T> implements List<T>{
     public int indexOf(T element) {
         Node<T> current = first;
         for (int i = 0; i < size; i++) {
-            if (current.element.equals(element)){
+            if (current.getElement().equals(element)){
                 return i;
             }
+            current = current.next;
         }
         return -1;
     }
 
     @Override
     public int lastIndexOf(T element) {
-        Node<T> current = last;
-        for (int i = size - 1; i >= 0; i++) {
-            if (current.element.equals(element)){
+        Node<T> current = last.previous;
+        for (int i = size - 1; i >= 0; i--) {
+            if (current.getElement().equals(element)){
                 return i;
             }
+            current = current.previous;
         }
         return -1;
     }
@@ -144,8 +140,22 @@ public class LinkedList <T> implements List<T>{
     static class Node<T>{
         T element;
         Node<T> next;
+        Node<T> previous;
         public Node(T element){
             this.element = element;
+        }
+        public Node(T element, Node<T> next, Node<T> previous){
+            this.element = element;
+            this.next = next;
+            this.previous = previous;
+        }
+
+        public Node<T> getPrevious() {
+            return previous;
+        }
+
+        public void setPrevious(Node<T> previous) {
+            this.previous = previous;
         }
 
         public T getElement() {

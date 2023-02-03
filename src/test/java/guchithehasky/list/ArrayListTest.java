@@ -7,8 +7,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ArrayListTest {
-    @Test
+
     @DisplayName("Test add some elements in list, check size.")
+    @Test
     public void addElements(){
         ArrayList<String> list = new ArrayList<>();
         list.add("S");

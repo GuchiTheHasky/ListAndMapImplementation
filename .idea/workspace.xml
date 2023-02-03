@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59011e15-7328-4f46-bea4-0c80215a3973" name="Changes" comment="Add LinkedList&#10;Add Objects.isNull(value)&#10;Changed all &lt;Objects&gt; to &lt;T&gt; in ArrayList&#10;Add @SuppressWarnings(&quot;unchecked&quot;)&#10;Add getters &amp;&amp; setters to static class Node in LinkedList&#10;Implement all methods of interface (my)List in LinkedList">
+    <list default="true" id="59011e15-7328-4f46-bea4-0c80215a3973" name="Changes" comment="change file name from ArrayListFirstTest to ArrayListTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/list/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/list/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/list/ArrayListFirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/list/ArrayListFirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/list/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/list/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/list/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/list/ArrayListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/list/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/list/LinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +55,8 @@
       <recent name="guchithehasky.list" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayListTest">
-    <configuration name="ArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LinkedListTest">
+    <configuration name="LinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -65,13 +65,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.LinkedListTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListTest.containsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTest.addAndCheckSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -80,14 +80,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.LinkedListTest" />
+      <option name="METHOD_NAME" value="addAndCheckSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListTest.containsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Colections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guchithehasky.list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guchithehasky.list" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.LinkedListTest" />
       <option name="METHOD_NAME" value="containsFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListTest.containsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTest.indexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -96,14 +112,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
-      <option name="METHOD_NAME" value="containsTrue" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.LinkedListTest" />
+      <option name="METHOD_NAME" value="indexOf" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListTest.getFirstIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTest.lastIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -112,23 +128,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
-      <option name="METHOD_NAME" value="getFirstIndexOf" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayListTest.lastIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Colections" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guchithehasky.list.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.LinkedListTest" />
       <option name="METHOD_NAME" value="lastIndexOf" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -137,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArrayListTest" />
-        <item itemvalue="JUnit.ArrayListTest.lastIndexOf" />
-        <item itemvalue="JUnit.ArrayListTest.getFirstIndexOf" />
-        <item itemvalue="JUnit.ArrayListTest.containsFalse" />
-        <item itemvalue="JUnit.ArrayListTest.containsTrue" />
+        <item itemvalue="JUnit.LinkedListTest" />
+        <item itemvalue="JUnit.LinkedListTest.lastIndexOf" />
+        <item itemvalue="JUnit.LinkedListTest.addAndCheckSize" />
+        <item itemvalue="JUnit.LinkedListTest.indexOf" />
+        <item itemvalue="JUnit.LinkedListTest.containsFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +189,28 @@
       <option name="project" value="LOCAL" />
       <updated>1675415594265</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change public void rise(), to private&#10;add JUnit tests in ArrayListTest&#10;add @DisplayName in ArrayListTest">
+      <created>1675425468769</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675425468769</updated>
+    </task>
+    <task id="LOCAL-00007" summary="change file name from ArrayListFirstTest to ArrayListTest">
+      <created>1675425575487</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675425575487</updated>
+    </task>
+    <task id="LOCAL-00008" summary="change file name from ArrayListFirstTest to ArrayListTest">
+      <created>1675425596287</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675425596287</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,10 +219,35 @@
     <MESSAGE value="Add LinkedList class &amp;&amp; LinkList Interface" />
     <MESSAGE value="Add LinkedList" />
     <MESSAGE value="Add LinkedList&#10;Add Objects.isNull(value)&#10;Changed all &lt;Objects&gt; to &lt;T&gt; in ArrayList&#10;Add @SuppressWarnings(&quot;unchecked&quot;)&#10;Add getters &amp;&amp; setters to static class Node in LinkedList&#10;Implement all methods of interface (my)List in LinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add LinkedList&#10;Add Objects.isNull(value)&#10;Changed all &lt;Objects&gt; to &lt;T&gt; in ArrayList&#10;Add @SuppressWarnings(&quot;unchecked&quot;)&#10;Add getters &amp;&amp; setters to static class Node in LinkedList&#10;Implement all methods of interface (my)List in LinkedList" />
+    <MESSAGE value="change public void rise(), to private&#10;add JUnit tests in ArrayListTest&#10;add @DisplayName in ArrayListTest" />
+    <MESSAGE value="change file name from ArrayListFirstTest to ArrayListTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="change file name from ArrayListFirstTest to ArrayListTest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/guchithehasky/list/LinkedListTest.java</url>
+          <line>254</line>
+          <properties class="guchithehasky.list.LinkedListTest" method="lastIndexOf">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="guchithehasky.list.LinkedList$Node" memberName="previous" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Colections$ArrayListFirstTest.ic" NAME="ArrayListFirstTest Coverage Results" MODIFIED="1675425078823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>guchithehasky.list.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Colections$LinkedListTest_addAndCheckSize.ic" NAME="LinkedListTest.addAndCheckSize Coverage Results" MODIFIED="1675436631203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>guchithehasky.list.*</FILTER>
     </SUITE>
   </component>
