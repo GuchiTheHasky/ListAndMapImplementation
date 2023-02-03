@@ -55,8 +55,8 @@
       <recent name="guchithehasky.list" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayListFirstTest">
-    <configuration name="ArrayListFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ArrayListTest">
+    <configuration name="ArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -65,13 +65,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListFirstTest" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListFirstTest.containsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.containsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -80,14 +80,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListFirstTest" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
       <option name="METHOD_NAME" value="containsFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListFirstTest.containsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.containsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -96,14 +96,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListFirstTest" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
       <option name="METHOD_NAME" value="containsTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListFirstTest.getFirstIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.getFirstIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -112,14 +112,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListFirstTest" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
       <option name="METHOD_NAME" value="getFirstIndexOf" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayListFirstTest.lastIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.lastIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -128,7 +128,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListFirstTest" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
       <option name="METHOD_NAME" value="lastIndexOf" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -137,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArrayListFirstTest" />
-        <item itemvalue="JUnit.ArrayListFirstTest.lastIndexOf" />
-        <item itemvalue="JUnit.ArrayListFirstTest.getFirstIndexOf" />
-        <item itemvalue="JUnit.ArrayListFirstTest.containsFalse" />
-        <item itemvalue="JUnit.ArrayListFirstTest.containsTrue" />
+        <item itemvalue="JUnit.ArrayListTest" />
+        <item itemvalue="JUnit.ArrayListTest.lastIndexOf" />
+        <item itemvalue="JUnit.ArrayListTest.getFirstIndexOf" />
+        <item itemvalue="JUnit.ArrayListTest.containsFalse" />
+        <item itemvalue="JUnit.ArrayListTest.containsTrue" />
       </list>
     </recent_temporary>
   </component>
