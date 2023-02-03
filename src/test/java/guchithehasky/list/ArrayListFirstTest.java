@@ -1,17 +1,19 @@
-package guchithehasky;
+package guchithehasky.list;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ArrayListTest {
+public class ArrayListFirstTest {
     @Test
     public void add(){
-        ArrayList list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
         list.add("S");
         list.add("O");
         list.add("S");
         assertEquals(3, list.size());
     }
+
+
 
     @Test
     public void addByIndex1(){
@@ -35,7 +37,7 @@ public class ArrayListTest {
 
     @Test
     public void remove1(){
-        ArrayList list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
         list.add("S");
         list.add("Element");
         list.add("S");
@@ -146,21 +148,5 @@ public class ArrayListTest {
 
         assertEquals(2, list.lastIndexOf("Car"));
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

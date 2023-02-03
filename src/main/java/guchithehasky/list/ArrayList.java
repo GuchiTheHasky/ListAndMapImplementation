@@ -1,47 +1,53 @@
-package guchithehasky;
+package guchithehasky.list;
 
 import java.util.Objects;
 import java.util.StringJoiner;
 
 public class ArrayList<T> implements List<T> {
-    private Object[] array;
+    private T[] array;
     private int size;
     public static final int DEFAULT_CAPACITY = 5;
 
+    @SuppressWarnings("unchecked")
     public ArrayList(int initCapacity) {
         if (initCapacity <= 0) {
             throw new IllegalArgumentException();
         }
-        array = new Object[initCapacity];
+        this.array = (T[]) new Object [initCapacity];
     }
 
     public ArrayList() {
         this(DEFAULT_CAPACITY);
     }
 
-    public void checkId() {
+    @SuppressWarnings("unchecked")
+    public void rise() {
         if (array.length == size) {
             Object[] tempArray = new Object[array.length * 2];
             System.arraycopy(array, 0, tempArray, 0, size);
-            array = tempArray;
+            array = (T[]) tempArray;
         }
     }
 
     @Override
-    public void add(Object value) {
-        checkId();
-        array[size] = value;
+    public void add(T element) {
+        rise();
+        if (!Objects.isNull(element)){
+        array[size] = element;
         size++;
+        }
     }
 
 
     @Override
-    public void add(Object value, int index) {
-        Objects.checkIndex(index, size);
-        checkId();
-        System.arraycopy(array, index, array, index + 1, size - index);
-        array[index] = value;
-        size++;
+    public void add(T element, int index) {
+        if (!Objects.isNull(element)) {
+            Objects.checkIndex(index, size);
+            rise();
+            System.arraycopy(array, index, array, index + 1, size - index);
+            array[index] = element;
+            size++;
+        }
     }
 
     @Override
@@ -60,15 +66,16 @@ public class ArrayList<T> implements List<T> {
     }
 
     @Override
-    public void set(Object value, int index) {
+    public void set(T element, int index) {
         Objects.checkIndex(index, size);
-        array[index] = value;
+        array[index] = element;
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     public void clear() {
         size = 0;
-        array = new Object[DEFAULT_CAPACITY];
+        array =(T[]) new Object[DEFAULT_CAPACITY];
     }
 
     @Override
@@ -82,14 +89,14 @@ public class ArrayList<T> implements List<T> {
     }
 
     @Override
-    public boolean contains(Object obj) {
-        return indexOf(obj) != -1;
+    public boolean contains(T element) {
+        return indexOf(element) != -1;
     }
 
     @Override
-    public int indexOf(Object obj) {
+    public int indexOf(T element) {
         for (int i = 0; i < size; i++) {
-            if (array[i].equals(obj)) {
+            if (array[i].equals(element)) {
                 return i;
             }
         }
@@ -97,9 +104,9 @@ public class ArrayList<T> implements List<T> {
     }
 
     @Override
-    public int lastIndexOf(Object obj) {
+    public int lastIndexOf(T element) {
         for (int i = size - 1; i > -1; i--) {
-            if (array[i].equals(obj)) {
+            if (array[i].equals(element)) {
                 return i;
             }
         }
