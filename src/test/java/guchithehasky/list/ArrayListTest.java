@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ArrayListFirstTest {
+public class ArrayListTest {
     @Test
     @DisplayName("Test add some elements in list, check size.")
     public void addElements(){
