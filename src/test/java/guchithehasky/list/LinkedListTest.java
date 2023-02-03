@@ -247,8 +247,29 @@ public class LinkedListTest {
         list.add("Brian");
         list.add("Dumbledore");
 
+        assertEquals(0, list.indexOf("Albus"));
         assertEquals(1, list.indexOf("Percival"));
         assertEquals(4, list.indexOf("Severus"));
+        assertEquals(7, list.indexOf("Dumbledore"));
+    }
+
+    @DisplayName("Test, last index of.")
+    @Test
+    public void lastIndexOf(){
+        LinkedList<String> list = new LinkedList<>();
+        list.add("Albus");
+        list.add("Percival");
+        list.add("Percival");
+        list.add("Percival");
+        list.add("Severus");
+        list.add("Severus");
+        list.add("Brian");
+        list.add("Dumbledore");
+
+        assertEquals(0, list.lastIndexOf("Albus"));
+        assertEquals(3, list.lastIndexOf("Percival"));
+        assertEquals(5, list.lastIndexOf("Severus"));
+        assertEquals(7, list.lastIndexOf("Dumbledore"));
     }
 
 

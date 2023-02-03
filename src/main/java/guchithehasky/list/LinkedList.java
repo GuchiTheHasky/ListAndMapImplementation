@@ -109,12 +109,14 @@ public class LinkedList <T> implements List<T>{
 
     @Override
     public int lastIndexOf(T element) {
-        Node<T> current = last.previous;
-        for (int i = size - 1; i >= 0; i--) {
-            if (current.getElement().equals(element)){
+        Node<T> current = first;
+        for (int i = 0; i < size; i++) {
+            if (current.getElement().equals(element) && i == size - 1 ||
+                current.getElement().equals(element) && !current.next.getElement().equals(element)
+                ){
                 return i;
             }
-            current = current.previous;
+            current = current.next;
         }
         return -1;
     }

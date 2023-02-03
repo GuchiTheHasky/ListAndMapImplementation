@@ -27,6 +27,7 @@ public class ArrayListTest {
         list.add("W");
         list.add("S", 0);
         assertEquals("S", list.get(0));
+        assertEquals(4, list.size());
     }
     @DisplayName("Test add an element in the middle of list.")
     @Test
@@ -241,7 +242,9 @@ public class ArrayListTest {
         list.add("Brian");
         list.add("Dumbledore");
 
+        assertEquals(0, list.indexOf("Albus"));
         assertEquals(1, list.indexOf("Percival"));
+        assertEquals(5, list.indexOf("Dumbledore"));
     }
 
     @DisplayName("Test, get last index of.")
@@ -255,7 +258,9 @@ public class ArrayListTest {
         list.add("Brian");
         list.add("Dumbledore");
 
+        assertEquals(0, list.lastIndexOf("Albus"));
         assertEquals(2, list.lastIndexOf("Percival"));
+        assertEquals(5, list.lastIndexOf("Dumbledore"));
     }
 
 }
