@@ -20,15 +20,6 @@ public class ArrayList<T> implements List<T> {
         this(DEFAULT_CAPACITY);
     }
 
-    @SuppressWarnings("unchecked")
-    public void rise() {
-        if (array.length == size) {
-            Object[] tempArray = new Object[array.length * 2];
-            System.arraycopy(array, 0, tempArray, 0, size);
-            array = (T[]) tempArray;
-        }
-    }
-
     @Override
     public void add(T element) {
         rise();
@@ -42,7 +33,7 @@ public class ArrayList<T> implements List<T> {
     @Override
     public void add(T element, int index) {
         if (!Objects.isNull(element)) {
-            Objects.checkIndex(index, size);
+            Objects.checkIndex(index, size + 1);
             rise();
             System.arraycopy(array, index, array, index + 1, size - index);
             array[index] = element;
@@ -95,6 +86,9 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public int indexOf(T element) {
+        if (Objects.isNull(element)){
+            return -1;
+        }
         for (int i = 0; i < size; i++) {
             if (array[i].equals(element)) {
                 return i;
@@ -105,7 +99,10 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public int lastIndexOf(T element) {
-        for (int i = size - 1; i > -1; i--) {
+        if (Objects.isNull(element)){
+            return -1;
+        }
+        for (int i = size - 1; i >= 0; i--) {
             if (array[i].equals(element)) {
                 return i;
             }
@@ -119,6 +116,15 @@ public class ArrayList<T> implements List<T> {
             joiner.add(array[i].toString());
         }
         return joiner.toString();
+    }
+
+    @SuppressWarnings("unchecked")
+    private void rise() {
+        if (array.length == size) {
+            Object[] tempArray = new Object[array.length * 2];
+            System.arraycopy(array, 0, tempArray, 0, size);
+            array = (T[]) tempArray;
+        }
     }
 
 
