@@ -1,174 +1,139 @@
 package guchithehasky.map;
 
-public class HashMap<K, V> {
-    public static final int ARRAY_SIZE = 16;
-    private Node<K, V>[] nodeList = new Node[ARRAY_SIZE];
+import java.util.Objects;
 
-    private long getHashCode(K key) {
-        String keyString = key.toString();
-        return keyString.hashCode();
-    }
+public class HashMap<K, V> implements Map<K, V> {
 
-    private int getIndex(long hashCode){
-        return Math.toIntExact(hashCode % ARRAY_SIZE); //
-    }
-
-    public void put(K key, V value){
-        long hashCode = this.getHashCode(key);
-        int index = this.getIndex(hashCode);
-        if (index > ARRAY_SIZE){
-            throw new IndexOutOfBoundsException("Error, invalid key.");
+    static class Entry<K, V>{
+        private K key;
+        private V value;
+        public Entry(K key, V value){
+            this.key = key;
+            this.value = value;
         }
-        if (this.nodeList[index] != null){
-            Node<K, V> existingNode = this.nodeList[index];
-            while (existingNode.getNext() != null){
-                existingNode = existingNode.getNext();
+
+        public K getKey() {
+            return key;
+        }
+
+        public void setKey(K key) {
+            this.key = key;
+        }
+
+        public V getValue() {
+            return value;
+        }
+
+        public void setValue(V value) {
+            this.value = value;
+        }
+    }
+
+    public static final int DEFAULT_CAPACITY = 16;
+    private int size;
+    private Entry<K, V>[] entries = new Entry[DEFAULT_CAPACITY];
+
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public V put(K key, V value) {
+        if (!isKeyExist(key)) {
+            if (!Objects.isNull(value)) {
+                rise();
+                Entry<K, V> entry = new Entry(key, value);
+                entries[size] = entry;
+                size++;
+                sortEntryMap();
+                return (V) entry;
             }
-            Node<K, V> newNode = new Node<>();
-            newNode.setKey(key);
-            newNode.setValue(value);
-            newNode.setHashCode(hashCode);
-
-            existingNode.setNext(newNode);
-        }
-        else {
-            Node<K, V> newNode = new Node<>();
-            newNode.setKey(key);
-            newNode.setValue(value);
-            newNode.setHashCode(hashCode);
-            this.nodeList[index] = newNode;
-        }
-
-    }
-
-    public void printHashMap(){
-        System.out.println("Map: ");
-        int index = 0;
-        while (index < ARRAY_SIZE){
-            Node<K, V> node = this.nodeList[index];
-            if (node != null){
-                int listIndex = 0;
-                while (node != null){
-
-                    System.out.print(node.getKey().toString() + " -> ");
-                    System.out.println(node.getValue().toString());
-                    node = node.getNext();
-                    listIndex++;
-                }
-                System.out.println();
-            }
-            index++;
-        }
-    }
-
-    public V get(K key){
-
-        int index = 0;
-        while (index < ARRAY_SIZE){
-            Node<K, V> node = this.nodeList[index];
-            if (node != null){
-                int listIndex = 0;
-                while (node != null){
-                    if (node.getKey().toString().equals(key.toString())){
-                        return node.getValue();
-                    }
-                    node = node.getNext();
-                    listIndex++;
-                }
-            }
-            index++;
         }
         return null;
     }
 
-    public K getFirst(V value){
-        int index = 0;
-        while (index < ARRAY_SIZE){
-            Node<K, V> node = this.nodeList[index];
-            if (node != null){
-                int listIndex = 0;
-                while (node != null){
-                    if (node.getValue().toString().equals(value.toString())){
-                        return node.getKey();
-                    }
-                    node = node.getNext();
-                    listIndex++;
-                }
+    @Override
+    public V get(K key) {
+        for (int i = 0; i < size; i++) {
+            if (entries[i].getKey().equals(key)){
+                return entries[i].getValue();
             }
-            index++;
         }
         return null;
     }
 
-    public K getLast(V value){
-        int index = 0;
-        K keyOne = null;
-        while (index < ARRAY_SIZE){
-            Node<K, V> node = this.nodeList[index];
-            if (node != null){
-                int listIndex = 0;
-                while (node != null){
-                    if (node.getValue().toString().equals(value.toString())){
-                        keyOne = node.getKey();
+    @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public V remove(K key) {
+        for (int i = 0; i < size; i++) {
+            if (entries[i].getKey().equals(key)){
+                Entry<K, V> deletedEntry = entries[i];
+                Entry<K, V>[] tempEntries = (Entry<K, V>[]) new Entry[size - 1];
+                int count = 0;
+                for (int j = 0; j < size; j++){
+                    if (j != i){
+                        tempEntries[count] = entries[j];
+                        count++;
                     }
-                    node = node.getNext();
-                    listIndex++;
+                }
+                size--;
+                entries = tempEntries;
+                return deletedEntry.getValue();
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public boolean containsKey(K key) {
+        for (int i = 0; i < size; i++) {
+            if (entries[i].getKey().equals(key)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @SuppressWarnings("unchecked")
+    private void rise() {
+        if (size == DEFAULT_CAPACITY) {
+            Entry<K, V>[] tempEntries = (Entry<K, V>[])new Object[size * 2];
+            System.arraycopy(entries, 0, tempEntries, 0, size);
+            entries = tempEntries;
+        }
+    }
+
+    private void sortEntryMap(){
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (getCharAtValueInt(entries[i].getKey()) < getCharAtValueInt(entries[j].getKey())){
+                    Entry<K, V> temp = entries[i];
+                    entries[i] = entries[j];
+                    entries[j] = temp;
                 }
             }
-            index++;
         }
-        return keyOne;
     }
 
-    public K getByValueAndId(V value, int id){
-        int index = 0;
-        int counter = 0;
-        K keyOne = null;
-        while (index < ARRAY_SIZE){
-            Node<K, V> node = this.nodeList[index];
-            if (node != null){
-                int listIndex = 0;
-                while (node != null){
-                    if (node.getValue().toString().equals(value.toString())){
-                        keyOne = node.getKey();
-                        counter++;
-                    }
-
-                    if (id == counter){
-                        return keyOne;
-                    }
-                    node = node.getNext();
-                    listIndex++;
-                }
+    private int getCharAtValueInt(K key){
+        String str = key.toString();
+        return str.charAt(0);
+    }
+    private boolean isKeyExist(K key){
+        for (int i = 0; i < size; i++) {
+            if (entries[i].getKey().equals(key)){
+                return true;
             }
-            index++;
         }
-        return keyOne;
+        return false;
     }
-
-    public static void main(String[] args) {
-        HashMap<Integer, String> map = new HashMap<>();
-        map.put(11, "Guchi");
-        map.put(22, "Dog");
-        map.put(44, "Dog");
-        map.put(55, "Dog");
-        map.put(66, "Dog");
-        map.put(77, "Dog");
-        map.put(88, "Car");
-
-        System.out.println(map.getByValueAndId("Dog", 1));
-
-    }
-
-
-
-
-
-
-
-
-
-
-
 }
 

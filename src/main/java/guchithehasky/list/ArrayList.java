@@ -121,7 +121,7 @@ public class ArrayList<T> implements List<T> {
     @SuppressWarnings("unchecked")
     private void rise() {
         if (array.length == size) {
-            Object[] tempArray = new Object[array.length * 2];
+            T[] tempArray = (T[])new Object[array.length * 2];
             System.arraycopy(array, 0, tempArray, 0, size);
             array = (T[]) tempArray;
         }

@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59011e15-7328-4f46-bea4-0c80215a3973" name="Changes" comment="add LinkedList JUnit tests.">
+    <list default="true" id="59011e15-7328-4f46-bea4-0c80215a3973" name="Changes" comment="add @Test lastIndexOf in class LinkedListTest.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/list/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/list/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/list/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/list/ArrayListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/list/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/list/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/list/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/list/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/map/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/map/HashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/map/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/map/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/map/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/HashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/map/HashMapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,89 +49,89 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/untitled"
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/BufferReader"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="guchithehasky.map" />
       <recent name="guchithehasky.list" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayListTest.lastIndexOf">
-    <configuration name="ArrayListTest.addElementInFirstIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HashMapTest">
+    <configuration name="HashMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="guchithehasky.list.*" />
+          <option name="PATTERN" value="guchithehasky.map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
-      <option name="METHOD_NAME" value="addElementInFirstIndex" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayListTest.indexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Colections" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guchithehasky.list.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
-      <option name="METHOD_NAME" value="indexOf" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayListTest.lastIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Colections" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guchithehasky.list.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
-      <option name="METHOD_NAME" value="lastIndexOf" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Colections" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guchithehasky.list.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.LinkedListTest" />
+      <option name="PACKAGE_NAME" value="guchithehasky.map" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.map.HashMapTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.indexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashMapTrainingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="guchithehasky.list.*" />
+          <option name="PATTERN" value="guchithehasky.map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.LinkedListTest" />
-      <option name="METHOD_NAME" value="indexOf" />
+      <option name="PACKAGE_NAME" value="guchithehasky.map" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.map.HashMapTrainingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMapTrainingTest.containsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Colections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guchithehasky.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guchithehasky.map" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.map.HashMapTrainingTest" />
+      <option name="METHOD_NAME" value="containsFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMapTrainingTest.containsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Colections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guchithehasky.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guchithehasky.map" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.map.HashMapTrainingTest" />
+      <option name="METHOD_NAME" value="containsTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMapTrainingTest.isEmptyFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Colections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guchithehasky.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guchithehasky.map" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.map.HashMapTrainingTest" />
+      <option name="METHOD_NAME" value="isEmptyFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArrayListTest.lastIndexOf" />
-        <item itemvalue="JUnit.ArrayListTest.indexOf" />
-        <item itemvalue="JUnit.ArrayListTest.addElementInFirstIndex" />
-        <item itemvalue="JUnit.LinkedListTest.indexOf" />
-        <item itemvalue="JUnit.LinkedListTest" />
+        <item itemvalue="JUnit.HashMapTest" />
+        <item itemvalue="JUnit.HashMapTrainingTest" />
+        <item itemvalue="JUnit.HashMapTrainingTest.containsFalse" />
+        <item itemvalue="JUnit.HashMapTrainingTest.containsTrue" />
+        <item itemvalue="JUnit.HashMapTrainingTest.isEmptyFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675440305000</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add @Test lastIndexOf in class LinkedListTest.">
+      <created>1675452211086</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675452211086</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,7 +238,8 @@
     <MESSAGE value="change public void rise(), to private&#10;add JUnit tests in ArrayListTest&#10;add @DisplayName in ArrayListTest" />
     <MESSAGE value="change file name from ArrayListFirstTest to ArrayListTest" />
     <MESSAGE value="add LinkedList JUnit tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="add LinkedList JUnit tests." />
+    <MESSAGE value="add @Test lastIndexOf in class LinkedListTest." />
+    <option name="LAST_COMMIT_MESSAGE" value="add @Test lastIndexOf in class LinkedListTest." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -239,11 +249,23 @@
     </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Colections$HashMapTrainingTest.ic" NAME="HashMapTrainingTest Coverage Results" MODIFIED="1675616027858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>guchithehasky.map.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Colections$ArrayListFirstTest.ic" NAME="ArrayListFirstTest Coverage Results" MODIFIED="1675425078823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>guchithehasky.list.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Colections$LinkedListTest_addAndCheckSize.ic" NAME="LinkedListTest.addAndCheckSize Coverage Results" MODIFIED="1675436631203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>guchithehasky.list.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Colections$ArrayListTest.ic" NAME="ArrayListTest Coverage Results" MODIFIED="1675458087766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>guchithehasky.list.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Colections$ArrayListTest_lastIndexOf.ic" NAME="ArrayListTest.lastIndexOf Coverage Results" MODIFIED="1675458072129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>guchithehasky.list.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Colections$HashMapTrainingTest_put.ic" NAME="HashMapTrainingTest.put Coverage Results" MODIFIED="1675608273523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>guchithehasky.map.*</FILTER>
     </SUITE>
   </component>
 </project>

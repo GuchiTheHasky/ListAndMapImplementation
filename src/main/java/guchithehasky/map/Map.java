@@ -5,12 +5,12 @@ public interface Map <K, V> {
 
         V get(K key);
 
-//        int size();
-//
-//        boolean isEmpty();
-//
-//        V remove(K key);
-//
-//        boolean containsKey(K key);
+        int size();
+
+        boolean isEmpty();
+
+        V remove(K key);
+
+        boolean containsKey(K key);
 
 }
