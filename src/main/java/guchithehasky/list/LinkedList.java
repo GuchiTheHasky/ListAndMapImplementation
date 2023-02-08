@@ -26,15 +26,17 @@ public class LinkedList <T> implements List<T>{
         else if (index == 0){
             node.next = first;
             first = node;
-        }
-        else if (index == size - 1){
-            last.next = node;
             last = node;
         }
         else {
             Node<T> current = getNodeByIndex(index - 1);
-            node.next = current.next;
             current.next = node;
+            if (index == 1){
+                current.next.previous = getNodeByIndex(0);
+            }
+            else {
+                current.next.previous = getNodeByIndex(index - 1);
+            }
         }
         size++;
     }
@@ -107,17 +109,37 @@ public class LinkedList <T> implements List<T>{
         return -1;
     }
 
+
+//    @Override
+//    public int lastIndexOf(T value) {
+//        Node<T> current = tail;
+//        for (int i = size - 1; i >= 0; i--) {
+//            if (Objects.equals(current.value, value)) {
+//                return i;
+//            }
+//            current = current.prev;
+//        }
+//        return -1;
+//    }
+
     @Override
     public int lastIndexOf(T element) {
-        Node<T> current = first;
-        for (int i = 0; i < size; i++) {
-            if (current.getElement().equals(element) && i == size - 1 ||
-                current.getElement().equals(element) && !current.next.getElement().equals(element)
-                ){
+        Node<T> current = last;
+        for (int i = size - 1; i >= 0; i--) {
+            if (Objects.equals(current.element, element)){
                 return i;
             }
-            current = current.next;
+            current = current.previous;
         }
+//        Node<T> current = first;
+//        for (int i = 0; i < size; i++) {
+//            if (current.getElement().equals(element) && i == size - 1 ||
+//                current.getElement().equals(element) && !current.next.getElement().equals(element)
+//                ){
+//                return i;
+//            }
+//            current = current.next;
+//        }
         return -1;
     }
     @Override
@@ -139,6 +161,16 @@ public class LinkedList <T> implements List<T>{
         return current;
     }
 
+
+//    private static class Node<T> {
+//        Node<T> next;
+//        Node<T> prev;
+//        T value;
+//
+//        public Node(T value) {
+//            this.value = value;
+//        }
+//    }
     static class Node<T>{
         T element;
         Node<T> next;
@@ -146,12 +178,6 @@ public class LinkedList <T> implements List<T>{
         public Node(T element){
             this.element = element;
         }
-        public Node(T element, Node<T> next, Node<T> previous){
-            this.element = element;
-            this.next = next;
-            this.previous = previous;
-        }
-
         public Node<T> getPrevious() {
             return previous;
         }
