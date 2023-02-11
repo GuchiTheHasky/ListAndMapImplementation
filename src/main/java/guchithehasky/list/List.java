@@ -1,6 +1,6 @@
 package guchithehasky.list;
 
-public interface List<T> { // Змінив всі value i obj на element
+public interface List<T> {
     void add(T element);
     void add(T element, int index);
     T remove(int index);

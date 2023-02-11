@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59011e15-7328-4f46-bea4-0c80215a3973" name="Changes" comment="add HashMap class&#10;add Map interface&#10;add HashMapTest class">
-      <change afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/list/AbstractListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/list/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/list/ArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guchithehasky/list/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guchithehasky/list/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/list/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/list/ArrayListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guchithehasky/list/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guchithehasky/list/LinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/Colections"
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/RunnableLesson"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -57,8 +55,8 @@
       <recent name="guchithehasky.list" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest">
-    <configuration name="ArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ArrayListTest and 1 more">
+    <configuration name="ArrayListTest and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -67,8 +65,12 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
-      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.ArrayListTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="guchithehasky.list.AbstractListTest" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="guchithehasky.list.ArrayListTest" />
+        <pattern testClass="guchithehasky.list.LinkedListTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.addElementByIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTest.getFirstElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -98,13 +100,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
       <option name="MAIN_CLASS_NAME" value="guchithehasky.list.LinkedListTest" />
-      <option name="METHOD_NAME" value="addElementByIndex" />
+      <option name="METHOD_NAME" value="getFirstElement" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.addFirstElementAndCheckSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTest.getLastElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Colections" />
       <extension name="coverage">
         <pattern>
@@ -114,7 +116,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="guchithehasky.list" />
       <option name="MAIN_CLASS_NAME" value="guchithehasky.list.LinkedListTest" />
-      <option name="METHOD_NAME" value="addFirstElementAndCheckSize" />
+      <option name="METHOD_NAME" value="getLastElement" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArrayListTest and 1 more" />
+        <item itemvalue="JUnit.ArrayListTest and 1 more" />
         <item itemvalue="JUnit.LinkedListTest" />
-        <item itemvalue="JUnit.LinkedListTest.addElementByIndex" />
         <item itemvalue="JUnit.LinkedListTest" />
-        <item itemvalue="JUnit.ArrayListTest" />
-        <item itemvalue="JUnit.LinkedListTest.removeMiddleElementAndCheckSize" />
+        <item itemvalue="JUnit.LinkedListTest" />
       </list>
     </recent_temporary>
   </component>

@@ -44,7 +44,7 @@ public class ArrayList<T> implements List<T> {
     @Override
     public T remove(int index) {
         Objects.checkIndex(index, size);
-        T element = (T) array[index];
+        T element = array[index];
         System.arraycopy(array, index + 1, array, index, size - index - 1);
         size--;
         return element;
@@ -126,7 +126,5 @@ public class ArrayList<T> implements List<T> {
             array = (T[]) tempArray;
         }
     }
-
-
 }
 
